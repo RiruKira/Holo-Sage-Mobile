@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "292566443102",
+    "project_id": "pfa-v1-f69d4",
+    "storage_bucket": "pfa-v1-f69d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292566443102:android:dfa18c510f380a674100cf",
+        "android_client_info": {
+          "package_name": "com.example.pfaloginv2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "292566443102-5dtnoa0fsjkqtll5rmf9aghoa6p9h9q5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuBEZr4oK7xDAA13JSjWBrLntAHJdKIl0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "292566443102-5dtnoa0fsjkqtll5rmf9aghoa6p9h9q5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
