@@ -1,4 +1,4 @@
-package com.example.plllease.adapters;
+package com.example.pfaloginv2.adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,9 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.plllease.R;
-import com.example.plllease.beans.User;
-import com.example.plllease.beans.imagemap;
+import com.example.pfaloginv2.R;
+import com.example.pfaloginv2.beans.imagemap;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 
@@ -27,13 +26,6 @@ public class MyAdapter extends FirebaseRecyclerAdapter<imagemap, MyAdapter.myvie
             holder.description.setText(model.getHotspots().get(0).getName().toString());
         } else
             holder.description.setText("delete null ");
-        holder.date.setText(model.getDate_captured());
-        //Convert String to int and get the Integer Value
-        double longitude = model.getGps_location().getLongitude();
-        double latitude = model.getGps_location().getLatitude();
-        int longitudeSimplifie = (int) longitude;
-        int latitudeSimplifie = (int) latitude;
-        holder.location.setText(longitudeSimplifie + ", " + latitudeSimplifie);
         Glide.with(holder.img.getContext()).load(model.getFile_url()).into(holder.img);
     }
 
@@ -52,8 +44,7 @@ public class MyAdapter extends FirebaseRecyclerAdapter<imagemap, MyAdapter.myvie
             super(itemView);
             img = (ImageView) itemView.findViewById(R.id.item_image);
             description = (TextView) itemView.findViewById(R.id.item_description);
-            location = (TextView) itemView.findViewById(R.id.item_location);
-            date = (TextView) itemView.findViewById(R.id.item_date);
+
         }
     }
 }

@@ -13,8 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:background="@drawable/input_bg"
         android:hint="User Name"
+        android:background="@drawable/input_bg"
         android:paddingLeft="10dp"
         android:paddingTop="5dp"
         android:paddingBottom="5dp" />
@@ -38,8 +38,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/password1"
         android:layout_marginTop="50dp"
-        android:text="Sign in"
         android:background="@drawable/button_bg"
+        android:text="Sign in"
         android:textColor="@color/white"
         android:textStyle="bold" />
 

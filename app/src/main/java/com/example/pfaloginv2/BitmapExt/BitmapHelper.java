@@ -1,4 +1,4 @@
-package com.example.ia_highway.bitmapHelper;
+package com.example.pfaloginv2.BitmapExt;
 
 import android.graphics.Bitmap;
 

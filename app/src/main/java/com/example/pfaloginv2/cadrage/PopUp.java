@@ -1,13 +1,11 @@
-package com.example.ia_highway.cadrage;
+package com.example.pfaloginv2.cadrage;
 
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.ia_highway.R;
+import com.example.pfaloginv2.cadrage.SomeView;
+import com.example.pfaloginv2.R;
 
 public class PopUp extends AppCompatActivity {
 
@@ -15,7 +13,7 @@ public class PopUp extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
-        setContentView(R.layout.activity_pop_up2);
+        setContentView(R.layout.activity_pop_up);
         setContentView(new SomeView(PopUp.this));
     }
 }

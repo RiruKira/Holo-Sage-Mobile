@@ -2,9 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.pfaloginv2">
 
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -13,22 +16,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PFALOGINV2">
+        <activity android:name=".cadrage.PopUp"
+            android:exported="false"/>
+        <activity
+            android:name=".ImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MetaData"
+            android:exported="false" />
         <activity
             android:name=".RegisterActivity"
-            android:label="REGISTER"
-            android:exported="false" />
+            android:exported="false"
+            android:label="REGISTER" />
         <activity
             android:name=".HomeActivity"
-            android:label="HOLO SAGE"
-            android:exported="false" />
+            android:exported="false"
+            android:label="HOLO SAGE" />
         <activity
             android:name=".LoginActivity"
-            android:label="LOGIN"
-            android:exported="false" />
+            android:exported="false"
+            android:label="LOGIN" />
         <activity
             android:name=".MainActivity"
-            android:label="Register"
-            android:exported="true">
+            android:exported="true"
+            android:label="Register">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -41,11 +52,10 @@
             android:authorities="com.example.android.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
-        <meta-data
-            android:name="android.support.FILE_PROVIDER_PATHS"
-            android:resource="@xml/file_paths"></meta-data>
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
         </provider>
     </application>
-
 
 </manifest>

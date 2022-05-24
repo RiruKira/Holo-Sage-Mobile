@@ -1,4 +1,4 @@
-package com.example.ia_highway.cadrage;
+package com.example.pfaloginv2.cadrage;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,17 +11,15 @@ import android.graphics.DashPathEffect;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.util.AttributeSet;
-import android.util.DisplayMetrics;
 import android.util.Log;
-import android.view.Display;
 import android.view.MotionEvent;
 import android.view.View;
 
 import androidx.appcompat.app.AlertDialog;
 
-import com.example.ia_highway.bitmapHelper.BitmapHelper;
-import com.example.ia_highway.models.Coords;
-import com.example.ia_highway.models.ListHelper;
+import com.example.pfaloginv2.BitmapExt.BitmapHelper;
+import com.example.pfaloginv2.beans.Coords;
+import com.example.pfaloginv2.beans.ListHelper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -49,10 +47,11 @@ public class SomeView extends View implements View.OnTouchListener {
         setFocusableInTouchMode(true);
 
         paint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        paint.setStyle(Paint.Style.STROKE);
         paint.setPathEffect(new DashPathEffect(new float[]{10, 20}, 0));
         paint.setStrokeWidth(5);
-        paint.setColor(Color.WHITE);
+        paint.setStyle(Paint.Style.FILL);
+        paint.setColor(Color.GREEN);
+        paint.setAlpha(50);
 
         this.setOnTouchListener(this);
         points = new ArrayList<Coords>();
@@ -79,8 +78,8 @@ public class SomeView extends View implements View.OnTouchListener {
 
 
     public void onDraw(Canvas canvas) {
-        int widtha= this.getResources().getDisplayMetrics().widthPixels;
-        int heighta= this.getResources().getDisplayMetrics().heightPixels;
+        int widtha= 1080;
+        int heighta= 1080;
         Bitmap resizedBitmap = Bitmap.createScaledBitmap(bitmap, widtha, heighta, true);
         canvas.drawBitmap(resizedBitmap, 0, 0, null);
         Path path = new Path();
@@ -219,8 +218,7 @@ public class SomeView extends View implements View.OnTouchListener {
         AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
         builder.setMessage("Voulez vous continuez?")
                 .setPositiveButton("Envoyer", dialogClickListener)
-                .setNegativeButton("Réessayer", dialogClickListener).show()
+                .setNegativeButton("Annuler", dialogClickListener).show()
                 .setCancelable(false);
     }
 }
-

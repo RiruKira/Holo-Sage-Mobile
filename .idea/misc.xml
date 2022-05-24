@@ -5,10 +5,18 @@
       <map>
         <entry key="..\:/AndroidStudioProjects/PFALOGINV2/app/src/main/res/drawable/button_bg.xml" value="0.1815" />
         <entry key="..\:/AndroidStudioProjects/PFALOGINV2/app/src/main/res/drawable/input_bg.xml" value="0.1815" />
+        <entry key="..\:/AndroidStudioProjects/PFALOGINV2/app/src/main/res/font/font.xml" value="0.19635416666666666" />
         <entry key="..\:/AndroidStudioProjects/PFALOGINV2/app/src/main/res/layout/activity_home.xml" value="0.22418478260869565" />
+        <entry key="..\:/AndroidStudioProjects/PFALOGINV2/app/src/main/res/layout/activity_image.xml" value="0.11764705882352941" />
+        <entry key="..\:/AndroidStudioProjects/PFALOGINV2/app/src/main/res/layout/activity_image2.xml" value="0.4" />
         <entry key="..\:/AndroidStudioProjects/PFALOGINV2/app/src/main/res/layout/activity_login.xml" value="0.22418478260869565" />
         <entry key="..\:/AndroidStudioProjects/PFALOGINV2/app/src/main/res/layout/activity_main.xml" value="0.22418478260869565" />
+        <entry key="..\:/AndroidStudioProjects/PFALOGINV2/app/src/main/res/layout/activity_meta_data.xml" value="0.16614583333333333" />
+        <entry key="..\:/AndroidStudioProjects/PFALOGINV2/app/src/main/res/layout/activity_pop_up.xml" value="0.16614583333333333" />
+        <entry key="..\:/AndroidStudioProjects/PFALOGINV2/app/src/main/res/layout/activity_pop_up2.xml" value="0.22418478260869565" />
         <entry key="..\:/AndroidStudioProjects/PFALOGINV2/app/src/main/res/layout/activity_register.xml" value="0.22418478260869565" />
+        <entry key="..\:/AndroidStudioProjects/PFALOGINV2/app/src/main/res/layout/item_layout.xml" value="0.21739130434782608" />
+        <entry key="..\:/AndroidStudioProjects/PFALOGINV2/app/src/main/res/layout/metadonne2.xml" value="0.21739130434782608" />
         <entry key="..\:/AndroidStudioProjects/PFALOGINV2/app/src/main/res/xml/file_paths.xml" value="0.1734375" />
       </map>
     </option>
